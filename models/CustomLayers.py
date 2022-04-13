@@ -222,6 +222,9 @@ class LayerEpilogue(nn.Module):
     def __init__(self, channels, dlatent_size, use_wscale,
                  use_noise, use_pixel_norm, use_instance_norm, use_styles, activation_layer):
         super().__init__()
+        # channels 512
+        # dlatent_size 512
+        # use_wscale True
 
         layers = []
         if use_noise:

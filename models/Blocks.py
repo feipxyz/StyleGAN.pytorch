@@ -26,6 +26,16 @@ class InputBlock(nn.Module):
     def __init__(self, nf, dlatent_size, const_input_layer, gain,
                  use_wscale, use_noise, use_pixel_norm, use_instance_norm, use_styles, activation_layer):
         super().__init__()
+        # nf 512
+        # dlatent_size 512
+        # const_input_layer True
+        # gain 1.4142135623730951
+        # use_wscale True
+        # use_noise True
+        # use_pixel_norm False
+        # use_instance_norm True
+        # use_styles True
+        # activation_layer LeakyReLU
         self.const_input_layer = const_input_layer
         self.nf = nf
 
