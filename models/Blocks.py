@@ -21,6 +21,8 @@ class InputBlock(nn.Module):
     We call it the InputBlock, the others GSynthesisBlock.
     (It might be nicer to do this the other way round,
     i.e. have the LayerEpilogue be the Layer and call the conv from that.)
+    第一个4x4的block是没有输入的, 把第一个卷积直接用一个可训练的常量tensor来代替, 称为InputBlock, 
+    其他有输入的称为GSynthesisBlock. (可能用其他的方法做这个也行)
     """
 
     def __init__(self, nf, dlatent_size, const_input_layer, gain,

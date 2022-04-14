@@ -1,6 +1,6 @@
 
 # dataset
-mkdir /content/dataset && cd /content/dataset
+mkdir -p /content/dataset && cd /content/dataset
 cp /content/drive/MyDrive/dataset/img_align_celeba.zip .
 unzip img_align_celeba.zip
 cd -
